@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Menu, X, ShoppingBag } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useCart } from "@/context/CartContext";
 
@@ -47,10 +48,17 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="text-xl font-bold text-brand tracking-widest uppercase"
+            className="flex items-center gap-2 text-xl font-bold text-brand tracking-widest uppercase"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            Saqib Restaurant
+            <Image
+              src="/assets/images/logo.png"
+              alt="Saqib Restaurant Logo"
+              width={36}
+              height={36}
+              className="object-contain rounded-full border border-brand/20"
+            />
+            <span className="hidden sm:inline-block">Saqib Restaurant</span>
           </Link>
 
           {/* Desktop Menu */}
