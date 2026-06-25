@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import CartSidebar from "@/components/CartSidebar";
@@ -12,6 +12,13 @@ export const metadata: Metadata = {
   description: "Experience exquisite mountain resort cuisine and traditional KPK hospitality in Matta, Swat. Reserve a table or order online.",
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -19,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased min-h-screen flex flex-col">
+      <body className="antialiased min-h-screen flex flex-col overflow-x-hidden">
         <CartProvider>
           <Navbar />
           <main className="flex-grow">

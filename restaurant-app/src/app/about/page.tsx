@@ -76,7 +76,7 @@ export default function AboutPage() {
     <div className="bg-[#FAF9F6]">
 
       {/* ── HERO SPLIT ── */}
-      <section className="min-h-[92vh] grid grid-cols-1 lg:grid-cols-2">
+      <section className="min-h-[92vh] grid grid-cols-1 lg:grid-cols-2 overflow-hidden">
 
         {/* Left: Large cinematic image */}
         <motion.div
@@ -277,7 +277,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── CHEF SECTION ── */}
-      <section className="py-24 bg-white border-t border-[#E8E4DC]">
+      <section className="py-24 bg-white border-t border-[#E8E4DC] overflow-hidden">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
