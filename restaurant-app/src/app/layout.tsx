@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import CartSidebar from "@/components/CartSidebar";
@@ -10,13 +10,6 @@ import { CartProvider } from "@/context/CartContext";
 export const metadata: Metadata = {
   title: "Saqib Restaurant Swat | Fine Dining in Matta Valley",
   description: "Experience exquisite mountain resort cuisine and traditional KPK hospitality in Matta, Swat. Reserve a table or order online.",
-};
-
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
 };
 
 export default function RootLayout({

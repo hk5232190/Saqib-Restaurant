@@ -67,7 +67,7 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white w-full max-w-[100vw] overflow-x-hidden">
       {/* Hero Banner */}
       <div className="relative bg-[#0A1A0F] py-28 md:py-36 overflow-hidden">
         <div className="absolute inset-0 opacity-10"
@@ -101,13 +101,13 @@ export default function ContactPage() {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-20 md:py-28 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-20 md:py-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
 
           {/* LEFT: Contact Form */}
           <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: EASE }}
           >
@@ -237,8 +237,8 @@ export default function ContactPage() {
 
           {/* RIGHT: Info Cards */}
           <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.15, ease: EASE }}
             className="space-y-5"

@@ -73,15 +73,15 @@ export default function AboutPage() {
   }
 
   return (
-    <div className="bg-[#FAF9F6]">
+    <div className="bg-[#FAF9F6] w-full max-w-[100vw] overflow-x-hidden">
 
       {/* ── HERO SPLIT ── */}
-      <section className="min-h-[92vh] grid grid-cols-1 lg:grid-cols-2 overflow-hidden">
+      <section className="min-h-[92vh] grid grid-cols-1 lg:grid-cols-2">
 
         {/* Left: Large cinematic image */}
         <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="relative h-[55vh] lg:h-auto overflow-hidden"
         >
@@ -112,8 +112,8 @@ export default function AboutPage() {
 
         {/* Right: Editorial text */}
         <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
           className="flex items-center px-5 sm:px-16 lg:px-20 py-16 lg:py-24"
         >
@@ -277,11 +277,11 @@ export default function AboutPage() {
       </section>
 
       {/* ── CHEF SECTION ── */}
-      <section className="py-24 bg-white border-t border-[#E8E4DC] overflow-hidden">
+      <section className="py-24 bg-white border-t border-[#E8E4DC]">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.9 }}
             className="relative"
@@ -306,8 +306,8 @@ export default function AboutPage() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.9, delay: 0.2 }}
             className="space-y-6"
