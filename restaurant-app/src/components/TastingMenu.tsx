@@ -69,7 +69,7 @@ export default function TastingMenu() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.8 }}
-            className="relative h-[520px] lg:h-[680px] w-full rounded-lg overflow-hidden shadow-luxury group"
+            className="relative h-[400px] md:h-[520px] lg:h-[680px] w-full rounded-lg overflow-hidden shadow-luxury group"
           >
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent z-10" />
             <img

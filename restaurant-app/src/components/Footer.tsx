@@ -150,10 +150,10 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-white/8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-white/30 text-xs font-light">
+          <p className="text-white/30 text-xs font-light text-center sm:text-left">
             © {new Date().getFullYear()} Saqib Restaurant · Matta, Swat. All rights reserved.
           </p>
-          <div className="flex gap-6 text-[11px] text-white/25">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-[11px] text-white/25">
             {["Halal Certified", "Privacy Policy", "Terms of Service"].map((item) => (
               <span key={item} className="hover:text-gold cursor-pointer transition-colors duration-300">
                 {item}

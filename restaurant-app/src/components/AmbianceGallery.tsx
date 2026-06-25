@@ -106,7 +106,7 @@ export default function AmbianceGallery() {
                 >
                   {item.title}
                 </h3>
-                <p className="text-white/60 text-xs font-light mt-1 max-h-0 group-hover:max-h-12 overflow-hidden transition-all duration-500 leading-relaxed">
+                <p className="text-white/60 text-xs font-light mt-1 max-h-12 sm:max-h-0 sm:group-hover:max-h-12 overflow-hidden transition-all duration-500 leading-relaxed">
                   {item.subtitle}
                 </p>
               </div>

@@ -77,30 +77,31 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.9, ease: EASE }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto"
         >
-          <Link href="/menu">
+          <Link href="/menu" className="w-full sm:w-auto">
             <motion.div
               whileHover={{ scale: 1.03, boxShadow: "0 10px 40px rgba(212,175,55,0.3)" }}
               whileTap={{ scale: 0.97 }}
-              className="flex items-center gap-2.5 px-8 py-4 bg-gold text-black text-[11px] font-bold uppercase tracking-[0.18em] rounded-sm cursor-pointer transition-all duration-300"
+              className="flex items-center justify-center gap-2.5 w-full px-8 py-4 bg-gold text-black text-[11px] font-bold uppercase tracking-[0.18em] rounded-sm cursor-pointer transition-all duration-300"
             >
               Explore Our Menu
               <ArrowRight size={14} />
             </motion.div>
           </Link>
 
-          <Link href="/contact">
+          <Link href="/contact" className="w-full sm:w-auto">
             <motion.div
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              className="flex items-center gap-2.5 px-8 py-4 bg-transparent border border-white/60 text-white text-[11px] font-bold uppercase tracking-[0.18em] rounded-sm cursor-pointer transition-all duration-300 hover:border-white hover:bg-white/5"
+              className="flex items-center justify-center gap-2.5 w-full px-8 py-4 bg-transparent border border-white/60 text-white text-[11px] font-bold uppercase tracking-[0.18em] rounded-sm cursor-pointer transition-all duration-300 hover:border-white hover:bg-white/5"
             >
               <Calendar size={14} />
               Contact Us
             </motion.div>
           </Link>
         </motion.div>
+
 
         {/* Trust badges */}
         <motion.div
