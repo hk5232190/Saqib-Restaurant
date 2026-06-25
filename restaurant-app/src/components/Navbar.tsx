@@ -21,6 +21,11 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
   const { cartCount, setIsCartOpen } = useCart();
+  
+  const isDarkHero = ["/", "/about", "/contact"].includes(pathname);
+  const iconColorClass = isScrolled 
+    ? "text-brand hover:text-brand-dark" 
+    : (isDarkHero ? "text-white hover:text-gold" : "text-brand hover:text-brand-dark");
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 60);
@@ -147,9 +152,7 @@ export default function Navbar() {
             <div className="md:hidden flex items-center gap-3">
               <button
                 onClick={() => setIsCartOpen(true)}
-                className={`relative p-2 transition-colors ${
-                  isScrolled ? "text-foreground hover:text-brand" : "text-white hover:text-gold"
-                }`}
+                className={`relative p-2 transition-colors ${iconColorClass}`}
                 aria-label="Open cart"
               >
                 <ShoppingBag size={20} />
@@ -161,9 +164,7 @@ export default function Navbar() {
               </button>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className={`p-2 transition-colors ${
-                  isScrolled ? "text-foreground hover:text-brand" : "text-white hover:text-gold"
-                }`}
+                className={`p-2 transition-colors ${iconColorClass}`}
                 aria-label="Toggle menu"
               >
                 {isOpen ? <X size={22} /> : <Menu size={22} />}

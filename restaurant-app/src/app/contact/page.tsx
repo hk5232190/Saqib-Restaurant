@@ -2,7 +2,24 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Instagram, Facebook, Twitter } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Facebook } from "lucide-react";
+
+const TikTok = ({ size = 24, className = "" }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+  </svg>
+);
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -267,9 +284,8 @@ export default function ContactPage() {
               <h3 className="text-[11px] uppercase tracking-[0.2em] font-bold text-muted mb-4">Follow Us</h3>
               <div className="flex gap-3">
                 {[
-                  { Icon: Instagram, label: "Instagram", href: "#" },
                   { Icon: Facebook, label: "Facebook", href: "#" },
-                  { Icon: Twitter, label: "Twitter / X", href: "#" },
+                  { Icon: TikTok, label: "TikTok", href: "#" },
                 ].map(({ Icon, label, href }) => (
                   <a
                     key={label}
