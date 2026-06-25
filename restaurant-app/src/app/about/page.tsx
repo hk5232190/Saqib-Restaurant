@@ -115,7 +115,7 @@ export default function AboutPage() {
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-          className="flex items-center px-8 sm:px-16 lg:px-20 py-16 lg:py-24"
+          className="flex items-center px-5 sm:px-16 lg:px-20 py-16 lg:py-24"
         >
           <div className="max-w-lg">
             <motion.span
@@ -131,7 +131,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.55, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="text-5xl md:text-6xl font-bold text-foreground leading-tight mb-6"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground leading-tight mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
               Where the{" "}
@@ -168,21 +168,7 @@ export default function AboutPage() {
               centuries-old Pashtun recipes that we are honoured to preserve and elevate.
             </motion.p>
 
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 0.6 }}
-            >
-              <Link href="/book">
-                <motion.div
-                  whileHover={{ scale: 1.02, boxShadow: "0 0 20px rgba(13,62,38,0.35)" }}
-                  whileTap={{ scale: 0.97 }}
-                  className="inline-flex items-center gap-3 px-8 py-4 bg-brand text-white font-bold rounded-xl uppercase tracking-widest text-sm cursor-pointer shadow-[0_4px_20px_rgba(13,62,38,0.25)]"
-                >
-                  Reserve a Table <ArrowRight size={16} />
-                </motion.div>
-              </Link>
-            </motion.div>
+
           </div>
         </motion.div>
       </section>

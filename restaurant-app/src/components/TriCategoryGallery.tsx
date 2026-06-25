@@ -251,8 +251,8 @@ export default function TriCategoryGallery() {
         </div>
 
         {/* Dynamic Tab Bar */}
-        <div className="flex justify-center mb-16">
-          <div className="bg-white p-1.5 rounded-full border border-stone-200 shadow-sm flex gap-2">
+        <div className="flex justify-center mb-16 px-2">
+          <div className="bg-white p-1.5 rounded-full border border-stone-200 shadow-sm flex gap-1 sm:gap-2 overflow-x-auto" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
             {(["ambiance", "moments", "food"] as CategoryTab[]).map((tab) => (
               <button
                 key={tab}
@@ -260,7 +260,7 @@ export default function TriCategoryGallery() {
                   setActiveTab(tab);
                   setLightboxIndex(null);
                 }}
-                className={`relative px-8 py-3 rounded-full text-xs font-bold tracking-[0.2em] uppercase transition-all duration-300 ${
+                className={`relative px-4 sm:px-8 py-3 rounded-full text-[10px] sm:text-xs font-bold tracking-[0.1em] sm:tracking-[0.2em] uppercase transition-all duration-300 whitespace-nowrap ${
                   activeTab === tab 
                     ? "text-white" 
                     : "text-stone-600 hover:text-foreground"

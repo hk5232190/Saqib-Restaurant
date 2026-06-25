@@ -282,7 +282,7 @@ export default function ContactPage() {
             {/* Social Media */}
             <div className="mt-6 bg-[#F7F7F7] rounded-md p-6 border border-[#E5E5E5]">
               <h3 className="text-[11px] uppercase tracking-[0.2em] font-bold text-muted mb-4">Follow Us</h3>
-              <div className="flex gap-3">
+              <div className="flex flex-wrap gap-3">
                 {[
                   { Icon: Facebook, label: "Facebook", href: "#" },
                   { Icon: TikTok, label: "TikTok", href: "#" },
