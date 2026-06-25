@@ -3,84 +3,134 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { ArrowRight, Calendar } from "lucide-react";
+
+const EASE = [0.16, 1, 0.3, 1] as const;
 
 export default function Hero() {
   return (
-    <div className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background HTML5 Video Player */}
+    <div className="relative h-screen min-h-[680px] flex items-center justify-center overflow-hidden">
+      {/* Video Background */}
       <video
         autoPlay
         loop
         muted
         playsInline
         className="absolute inset-0 w-full h-full object-cover z-0"
+        style={{ filter: "brightness(0.75)" }}
       >
-        <source
-          src="/assets/videos/hero-video.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
+        <source src="/assets/videos/hero-video.mp4" type="video/mp4" />
       </video>
 
-      {/* Dark Overlay to make video darker and legible text */}
-      <div className="absolute inset-0 z-0 bg-black/50" />
+      {/* Multi-layer Overlay */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/10" />
+      </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto space-y-6">
-        <motion.p 
-          initial={{ opacity: 0, y: 15 }}
+      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto w-full">
+
+        {/* Gold eyebrow */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.15, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="text-primary uppercase tracking-[0.3em] text-sm md:text-base font-semibold mb-2"
+          transition={{ delay: 0.1, duration: 0.9, ease: EASE }}
+          className="flex flex-col items-center mb-6"
         >
-          Welcome to Saqib Restaurant
-        </motion.p>
-        
-        <motion.h1 
-          initial={{ opacity: 0, y: 25 }}
+          <div className="flex items-center gap-4 mb-4">
+            <div className="h-px w-12 bg-gold/70" />
+            <span className="text-gold text-[10px] uppercase tracking-[0.35em] font-semibold">
+              Matta · Swat Valley · Since 2015
+            </span>
+            <div className="h-px w-12 bg-gold/70" />
+          </div>
+        </motion.div>
+
+        {/* Main Headline */}
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.35, duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-          className="text-5xl md:text-8xl font-bold mb-4 text-white tracking-[0.15em] leading-tight uppercase" 
-          style={{ fontFamily: "'Playfair Display', serif" }}
+          transition={{ delay: 0.25, duration: 0.9, ease: EASE }}
+          className="text-[clamp(2.8rem,9vw,6.5rem)] font-bold text-white leading-[1.05] mb-6"
+          style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 700 }}
         >
-          A Symphony of <span className="text-primary italic font-normal">Flavors</span>
+          A Symphony of{" "}
+          <span className="italic font-light" style={{ color: "#D4AF37" }}>
+            Flavors
+          </span>
         </motion.h1>
-        
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }}
+
+        {/* Subheading */}
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.55, duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-          className="text-base md:text-xl text-stone-200 mb-8 max-w-2xl mx-auto font-light tracking-wide leading-relaxed"
+          transition={{ delay: 0.45, duration: 0.9, ease: EASE }}
+          className="text-[clamp(0.9rem,2vw,1.15rem)] text-white/75 mb-10 max-w-xl mx-auto font-light tracking-wide leading-relaxed"
         >
-          Where culinary artistry meets standard luxury. Indulge in an unforgettable sensory experience.
+          Where culinary artistry meets the spirit of Swat — an unforgettable
+          dining experience rooted in authentic KPK tradition.
         </motion.p>
-        
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
+
+        {/* Dual CTA Buttons */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.75, duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-          className="flex justify-center pt-4"
+          transition={{ delay: 0.6, duration: 0.9, ease: EASE }}
+          className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <Link href="#experience">
+          <Link href="/menu">
             <motion.div
-              whileHover={{ scale: 1.02, boxShadow: "0 0 20px rgba(13,62,38,0.3)", backgroundColor: "#1a5c3a" }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-brand text-white font-bold rounded-lg transition-colors flex items-center justify-center uppercase tracking-widest text-sm cursor-pointer"
+              whileHover={{ scale: 1.03, boxShadow: "0 10px 40px rgba(212,175,55,0.3)" }}
+              whileTap={{ scale: 0.97 }}
+              className="flex items-center gap-2.5 px-8 py-4 bg-gold text-black text-[11px] font-bold uppercase tracking-[0.18em] rounded-sm cursor-pointer transition-all duration-300"
             >
-              Explore the Experience
+              Explore Our Menu
+              <ArrowRight size={14} />
+            </motion.div>
+          </Link>
+
+          <Link href="/book">
+            <motion.div
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+              className="flex items-center gap-2.5 px-8 py-4 bg-transparent border border-white/60 text-white text-[11px] font-bold uppercase tracking-[0.18em] rounded-sm cursor-pointer transition-all duration-300 hover:border-white hover:bg-white/5"
+            >
+              <Calendar size={14} />
+              Reserve a Table
             </motion.div>
           </Link>
         </motion.div>
+
+        {/* Trust badges */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.75, duration: 0.9, ease: EASE }}
+          className="flex items-center justify-center gap-6 mt-12 text-white/50"
+        >
+          {["100% Halal", "Est. 2015", "Authentic KPK"].map((badge, i) => (
+            <React.Fragment key={badge}>
+              <span className="text-[10px] uppercase tracking-[0.2em] font-medium">{badge}</span>
+              {i < 2 && <span className="text-gold/50 text-lg">·</span>}
+            </React.Fragment>
+          ))}
+        </motion.div>
       </div>
 
-      {/* Floating Scroll Indicator */}
-      <motion.div 
+      {/* Scroll indicator */}
+      <motion.div
         animate={{ y: [0, 10, 0] }}
-        transition={{ repeat: Infinity, duration: 1.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden md:block"
+        transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-col items-center gap-2"
       >
-        <div className="w-6 h-10 border-2 border-border rounded-full flex justify-center p-1">
-          <div className="w-1.5 h-1.5 bg-primary rounded-full" />
+        <span className="text-white/40 text-[9px] uppercase tracking-[0.25em]">Scroll</span>
+        <div className="w-5 h-8 border border-white/25 rounded-full flex justify-center pt-1.5">
+          <motion.div
+            animate={{ y: [0, 8, 0], opacity: [1, 0.3, 1] }}
+            transition={{ repeat: Infinity, duration: 2 }}
+            className="w-1 h-1.5 bg-gold rounded-full"
+          />
         </div>
       </motion.div>
     </div>

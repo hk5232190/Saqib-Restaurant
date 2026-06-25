@@ -1082,27 +1082,26 @@ export default function MenuGrid() {
   };
 
   return (
-    <section id="menu" className="py-20 bg-[#FAF9F6] min-h-screen">
+    <section id="menu" className="py-24 bg-white min-h-screen">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10"
       >
-        <div className="text-center mb-12">
-          <span className="text-brand text-xs uppercase tracking-[0.25em] font-semibold block mb-3">
-            Gourmet Mountain Dining
-          </span>
+        <div className="text-center mb-14">
+          <span className="eyebrow block mb-4">Gourmet Mountain Dining</span>
           <h2
-            className="text-4xl md:text-5xl font-bold text-foreground mb-4 uppercase tracking-widest font-serif"
-            style={{ fontFamily: "'Playfair Display', serif" }}
+            className="text-[clamp(2rem,5vw,3.5rem)] font-bold text-foreground mb-5"
+            style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            SAQIB RESTUARENT <span className="text-brand italic font-normal">MENU</span>
+            Saqib Restaurant{" "}
+            <em className="italic font-light text-brand">Menu</em>
           </h2>
-          <div className="h-0.5 w-24 bg-brand mx-auto mb-8 rounded" />
+          <span className="gold-divider" style={{ marginBottom: "2.5rem" }} />
 
-          {/* Filter Tabs */}
-          <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-8">
+          {/* Category Filter Tabs */}
+          <div className="flex flex-wrap justify-center gap-2 md:gap-3 mt-10">
             {CATEGORIES.map((category) => (
               <button
                 key={category}
@@ -1110,15 +1109,14 @@ export default function MenuGrid() {
                   if (activeCategory !== category) {
                     setIsLoading(true);
                     setActiveCategory(category);
-                    setTimeout(() => {
-                      setIsLoading(false);
-                    }, 350);
+                    setTimeout(() => { setIsLoading(false); }, 350);
                   }
                 }}
-                className={`px-6 py-2.5 rounded-full text-xs md:text-sm font-semibold transition-all uppercase tracking-wider border ${activeCategory === category
-                    ? "bg-brand border-brand text-white shadow-[0_4px_12px_rgba(13,62,38,0.25)]"
-                    : "bg-white border-stone-200 text-stone-600 hover:border-brand hover:text-brand"
-                  }`}
+                className={`px-5 py-2 text-[10px] font-bold uppercase tracking-[0.18em] rounded-sm transition-all duration-300 border ${
+                  activeCategory === category
+                    ? "bg-gold border-gold text-black shadow-gold"
+                    : "bg-white border-[#E5E5E5] text-muted hover:border-gold/60 hover:text-brand"
+                }`}
               >
                 {category}
               </button>
@@ -1127,23 +1125,23 @@ export default function MenuGrid() {
         </div>
 
         {/* Menu Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[50vh]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-4 min-h-[50vh]">
           {isLoading ? (
             Array.from({ length: 6 }).map((_, idx) => (
-              <div key={idx} className="bg-white rounded-3xl overflow-hidden border border-stone-100 animate-pulse shadow-sm flex flex-col justify-between h-[450px]">
-                <div className="relative h-52 bg-brand/10" />
+              <div key={idx} className="bg-white rounded-md overflow-hidden border border-[#E5E5E5] animate-pulse shadow-luxury flex flex-col h-[440px]">
+                <div className="relative h-52 bg-brand/5" />
                 <div className="p-6 space-y-4 flex-grow">
                   <div className="flex justify-between items-start gap-4">
-                    <div className="h-6 bg-brand/10 rounded w-2/3" />
-                    <div className="h-6 bg-brand/20 rounded w-1/4" />
+                    <div className="h-5 bg-brand/8 rounded w-2/3" />
+                    <div className="h-5 bg-gold/20 rounded w-1/4" />
                   </div>
                   <div className="space-y-2 mt-4">
-                    <div className="h-3 bg-brand/10 rounded w-full" />
-                    <div className="h-3 bg-brand/10 rounded w-5/6" />
+                    <div className="h-3 bg-brand/5 rounded w-full" />
+                    <div className="h-3 bg-brand/5 rounded w-5/6" />
                   </div>
                 </div>
                 <div className="p-6 pt-0">
-                  <div className="h-12 bg-brand/10 rounded-xl w-full" />
+                  <div className="h-11 bg-brand/8 rounded-sm w-full" />
                 </div>
               </div>
             ))
@@ -1155,86 +1153,76 @@ export default function MenuGrid() {
                   <motion.div
                     key={item.id}
                     layout
-                    initial={{ opacity: 0, scale: 0.95, y: 30 }}
+                    initial={{ opacity: 0, scale: 0.97, y: 20 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
-                    exit={{ opacity: 0, scale: 0.95, y: 30 }}
-                    transition={{
-                      duration: 0.5,
-                      delay: idx * 0.05,
-                      ease: [0.16, 1, 0.3, 1],
-                    }}
-                    whileHover={{ y: -6, transition: { duration: 0.3 } }}
-                    className="bg-white rounded-3xl overflow-hidden border border-stone-100 shadow-sm hover:shadow-stone-100/50 transition-all duration-500 group flex flex-col justify-between h-[460px]"
+                    exit={{ opacity: 0, scale: 0.97, y: 20 }}
+                    transition={{ duration: 0.45, delay: idx * 0.04, ease: [0.16, 1, 0.3, 1] }}
+                    whileHover={{ y: -5, boxShadow: "0 20px 50px rgba(0,0,0,0.1)", transition: { duration: 0.3 } }}
+                    className="bg-white rounded-md overflow-hidden border border-[#E5E5E5] shadow-luxury transition-all duration-400 group flex flex-col h-[450px]"
                   >
-                    <div>
-                      {/* Image container */}
-                      <div className="relative h-52 overflow-hidden bg-stone-100">
+                    <div className="flex-1">
+                      {/* Image */}
+                      <div className="relative h-52 overflow-hidden bg-[#F7F7F7]">
                         <img
                           src={item.image}
                           alt={item.title}
                           loading="lazy"
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                         />
-                        <div className="absolute top-4 right-4 flex gap-2 flex-wrap justify-end max-w-[70%] z-10">
+                        {/* Dietary tags */}
+                        <div className="absolute top-3 right-3 flex gap-1.5 flex-wrap justify-end max-w-[70%] z-10">
                           {item.dietary.map((tag) => (
                             <span
                               key={tag}
-                              className="bg-white/90 backdrop-blur-sm text-[9px] uppercase tracking-widest font-bold text-brand px-2.5 py-1 rounded-full border border-brand/20 shadow-sm"
+                              className="bg-white/95 text-[8px] uppercase tracking-[0.15em] font-bold text-brand px-2.5 py-1 rounded-sm border border-brand/15 shadow-sm"
                             >
                               {tag}
                             </span>
                           ))}
                         </div>
+                        {/* Gradient bottom */}
+                        <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-black/20 to-transparent" />
                       </div>
 
-                      {/* Content details */}
-                      <div className="p-6">
-                        <div className="flex justify-between items-start mb-2 gap-2">
-                          <h3 className="text-xl font-bold text-stone-800 font-serif leading-snug tracking-wide line-clamp-1">
+                      {/* Content */}
+                      <div className="p-5">
+                        <div className="flex justify-between items-start gap-2 mb-2">
+                          <h3
+                            className="text-[1.1rem] font-bold text-foreground leading-snug line-clamp-1"
+                            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                          >
                             {item.title}
                           </h3>
-                          <span className="text-base font-bold text-brand whitespace-nowrap mt-0.5 font-sans">
-                            Rs. {item.price.toLocaleString("en-PK")}
+                          <span className="text-base font-bold text-gold whitespace-nowrap mt-0.5 flex-shrink-0">
+                            Rs.{item.price.toLocaleString("en-PK")}
                           </span>
                         </div>
-                        <p className="text-stone-500 text-xs md:text-sm font-light line-clamp-3 leading-relaxed font-sans">
+                        <p className="text-muted text-xs font-light line-clamp-3 leading-relaxed">
                           {item.description}
                         </p>
                       </div>
                     </div>
 
-                    {/* Add to Cart Trigger */}
-                    <div className="p-6 pt-0">
+                    {/* Add to Cart */}
+                    <div className="p-5 pt-0">
                       <motion.button
                         onClick={() => handleAddToCart(item)}
-                        whileTap={{ scale: 0.96 }}
-                        whileHover={!isAdded ? { scale: 1.02 } : {}}
-                        transition={{ duration: 0.35 }}
-                        className={`w-full py-3.5 rounded-xl font-bold transition-all flex items-center justify-center gap-2 text-xs uppercase tracking-wider border ${isAdded
-                            ? "bg-emerald-600 text-white border-emerald-600 shadow-[0_4px_12px_rgba(5,150,105,0.3)] font-sans"
-                            : "bg-brand border-brand hover:bg-[#0f4d2f] text-white transition-all duration-300 font-sans"
-                          }`}
+                        whileTap={{ scale: 0.97 }}
+                        transition={{ duration: 0.25 }}
+                        className={`w-full py-3 rounded-sm font-bold text-[10px] uppercase tracking-[0.18em] flex items-center justify-center gap-2 transition-all duration-300 border ${
+                          isAdded
+                            ? "bg-emerald-600 text-white border-emerald-600"
+                            : "bg-brand border-brand text-white hover:bg-brand-dark"
+                        }`}
                       >
                         <AnimatePresence mode="wait">
                           {isAdded ? (
-                            <motion.span
-                              key="added"
-                              initial={{ opacity: 0, scale: 0.7 }}
-                              animate={{ opacity: 1, scale: 1 }}
-                              exit={{ opacity: 0, scale: 0.7 }}
-                              className="flex items-center gap-2"
-                            >
-                              <Check size={14} /> Added!
+                            <motion.span key="added" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="flex items-center gap-2">
+                              <Check size={13} /> Added!
                             </motion.span>
                           ) : (
-                            <motion.span
-                              key="add"
-                              initial={{ opacity: 0, scale: 0.7 }}
-                              animate={{ opacity: 1, scale: 1 }}
-                              exit={{ opacity: 0, scale: 0.7 }}
-                              className="flex items-center gap-2"
-                            >
-                              <Plus size={14} /> Add to Cart
+                            <motion.span key="add" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="flex items-center gap-2">
+                              <Plus size={13} /> Add to Cart
                             </motion.span>
                           )}
                         </AnimatePresence>

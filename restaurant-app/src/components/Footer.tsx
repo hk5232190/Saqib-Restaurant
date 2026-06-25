@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Instagram, Facebook, Twitter, MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useMemo } from "react";
@@ -8,63 +9,85 @@ import { useMemo } from "react";
 function useIsOpenNow() {
   return useMemo(() => {
     const now = new Date();
-    const hour = now.getHours();
-    const minute = now.getMinutes();
-    const totalMins = hour * 60 + minute;
-
-    // Daily: 11:00 AM (660 mins) – 11:00 PM (1380 mins)
-    return totalMins >= 660 && totalMins < 1380;
+    const totalMins = now.getHours() * 60 + now.getMinutes();
+    return totalMins >= 660 && totalMins < 1380; // 11AM–11PM
   }, []);
 }
 
 export default function Footer() {
   const isOpen = useIsOpenNow();
-  const address = "Main Matta Bazaar Road, Matta, Swat, KPK, Pakistan";
-  const phone = "+92 946 720 101";
 
   return (
-    <footer className="bg-background border-t border-border">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+    <footer className="bg-[#0A1A0F] text-white">
+      {/* Gold top accent line */}
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-gold to-transparent opacity-40" />
 
-          {/* Brand */}
-          <div>
-            <Link href="/" className="text-xl font-bold text-brand tracking-widest uppercase" style={{ fontFamily: "'Playfair Display', serif" }}>
-              Saqib Restaurant
-            </Link>
-            <p className="text-muted text-sm mt-4 leading-relaxed">
-              An uncompromising dining experience — where every plate tells a story of craft, culture, and passion.
-            </p>
-            <div className="flex gap-4 mt-6">
-              {[
-                { icon: Instagram, href: "#" },
-                { icon: Facebook, href: "#" },
-                { icon: Twitter, href: "#" },
-              ].map(({ icon: Icon, href }, i) => (
-                <motion.a
-                  key={i}
-                  href={href}
-                  whileHover={{ y: -3, color: "#0D3E26" }}
-                  className="w-10 h-10 border border-border rounded-xl flex items-center justify-center text-muted hover:border-brand/50 transition-colors"
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-20 pb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
+
+          {/* Brand Column */}
+          <div className="lg:col-span-1">
+            <Link href="/" className="flex items-center gap-3 mb-5 group">
+              <div className="relative w-10 h-10 rounded-full overflow-hidden border border-gold/30 group-hover:border-gold/70 transition-colors duration-300">
+                <Image src="/assets/images/logo.png" alt="Saqib Restaurant" fill className="object-cover" />
+              </div>
+              <div>
+                <p
+                  className="text-gold text-sm font-bold tracking-[0.18em] uppercase leading-none"
+                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 >
-                  <Icon size={16} />
+                  Saqib
+                </p>
+                <p className="text-white/40 text-[10px] tracking-[0.2em] uppercase font-light mt-0.5">
+                  Restaurant
+                </p>
+              </div>
+            </Link>
+
+            <p className="text-white/45 text-sm font-light leading-relaxed mb-7 max-w-xs">
+              An uncompromising dining experience — where every plate tells a story of craft,
+              culture, and Swati passion.
+            </p>
+
+            {/* Social Icons */}
+            <div className="flex gap-3">
+              {[
+                { Icon: Instagram, href: "#", label: "Instagram" },
+                { Icon: Facebook, href: "#", label: "Facebook" },
+                { Icon: Twitter, href: "#", label: "Twitter" },
+              ].map(({ Icon, href, label }) => (
+                <motion.a
+                  key={label}
+                  href={href}
+                  aria-label={label}
+                  whileHover={{ y: -3, color: "#D4AF37" }}
+                  className="w-9 h-9 rounded-sm border border-white/10 flex items-center justify-center text-white/40 hover:border-gold/50 transition-colors duration-300"
+                >
+                  <Icon size={14} />
                 </motion.a>
               ))}
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Navigate */}
           <div>
-            <h4 className="text-foreground font-bold uppercase tracking-widest text-sm mb-6">Navigate</h4>
-            <ul className="space-y-3">
+            <h4 className="text-white text-[10px] font-bold uppercase tracking-[0.22em] mb-6 flex items-center gap-3">
+              Navigate
+              <span className="h-px flex-1 bg-white/10" />
+            </h4>
+            <ul className="space-y-3.5">
               {[
                 { label: "Home", href: "/" },
                 { label: "Our Menu", href: "/menu" },
+                { label: "About Us", href: "/about" },
+                { label: "Gallery", href: "/gallery" },
                 { label: "Reserve a Table", href: "/book" },
-                { label: "Checkout", href: "/checkout" },
               ].map(({ label, href }) => (
                 <li key={label}>
-                  <Link href={href} className="text-muted hover:text-brand transition-colors text-sm">
+                  <Link
+                    href={href}
+                    className="text-white/45 hover:text-gold text-sm font-light transition-colors duration-300 hover:translate-x-1 inline-block"
+                  >
                     {label}
                   </Link>
                 </li>
@@ -72,59 +95,70 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact */}
           <div>
-            <h4 className="text-foreground font-bold uppercase tracking-widest text-sm mb-6">Find Us</h4>
+            <h4 className="text-white text-[10px] font-bold uppercase tracking-[0.22em] mb-6 flex items-center gap-3">
+              Find Us
+              <span className="h-px flex-1 bg-white/10" />
+            </h4>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3 text-muted text-sm">
-                <MapPin size={16} className="text-brand mt-0.5 flex-shrink-0" />
-                <span>{address}</span>
+              <li className="flex items-start gap-3">
+                <MapPin size={14} className="text-gold mt-0.5 flex-shrink-0" />
+                <span className="text-white/45 text-sm font-light leading-relaxed">
+                  Main Matta Bazaar Road, Matta, Swat, KPK, Pakistan
+                </span>
               </li>
-              <li className="flex items-start gap-3 text-muted text-sm">
-                <Phone size={16} className="text-brand mt-0.5 flex-shrink-0" />
-                <span className="font-semibold">{phone}</span>
+              <li className="flex items-center gap-3">
+                <Phone size={14} className="text-gold flex-shrink-0" />
+                <span className="text-white/70 text-sm font-semibold">+92 946 720 101</span>
               </li>
-              <li className="flex items-start gap-3 text-muted text-sm">
-                <Mail size={16} className="text-brand mt-0.5 flex-shrink-0" />
-                <span>hello@restaurant-swat.pk</span>
+              <li className="flex items-center gap-3">
+                <Mail size={14} className="text-gold flex-shrink-0" />
+                <span className="text-white/45 text-sm font-light">hello@saqibrestaurant.pk</span>
               </li>
             </ul>
           </div>
 
-          {/* Opening Hours */}
+          {/* Hours */}
           <div>
-            <h4 className="text-foreground font-bold uppercase tracking-widest text-sm mb-6">Hours</h4>
-            <ul className="space-y-3">
-              {[
-                { day: "Everyday", time: "11:00 AM – 11:00 PM" },
-              ].map(({ day, time }) => (
-                <li key={day} className="flex justify-between text-sm">
-                  <span className="text-muted">{day}</span>
-                  <span className="text-brand font-medium">{time}</span>
-                </li>
-              ))}
-              <li className="flex items-center gap-2 mt-4 text-xs">
-                <span className={`relative flex h-2 w-2`}>
-                  <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${isOpen ? 'bg-emerald-400' : 'bg-amber-400'}`} />
-                  <span className={`relative inline-flex rounded-full h-2 w-2 ${isOpen ? 'bg-emerald-400' : 'bg-amber-400'}`} />
+            <h4 className="text-white text-[10px] font-bold uppercase tracking-[0.22em] mb-6 flex items-center gap-3">
+              Hours
+              <span className="h-px flex-1 bg-white/10" />
+            </h4>
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <Clock size={14} className="text-gold flex-shrink-0" />
+                <div>
+                  <p className="text-white/70 text-sm font-semibold">Everyday</p>
+                  <p className="text-gold text-sm font-light">11:00 AM – 11:00 PM</p>
+                </div>
+              </div>
+
+              {/* Live status */}
+              <div className="flex items-center gap-2.5 mt-4 bg-white/5 border border-white/8 rounded-sm px-4 py-3">
+                <span className="relative flex h-2 w-2">
+                  <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${isOpen ? "bg-emerald-400" : "bg-amber-400"}`} />
+                  <span className={`relative inline-flex rounded-full h-2 w-2 ${isOpen ? "bg-emerald-400" : "bg-amber-400"}`} />
                 </span>
-                <span className={isOpen ? 'text-emerald-400' : 'text-amber-400'}>
-                  {isOpen ? 'Currently Open' : 'Currently Closed'}
+                <span className={`text-[10px] font-semibold uppercase tracking-[0.2em] ${isOpen ? "text-emerald-400" : "text-amber-400"}`}>
+                  {isOpen ? "Currently Open" : "Currently Closed"}
                 </span>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="border-t border-border mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-muted text-sm">
-            © 2026 Saqib Restaurant (Main Branch). All rights reserved.
+        {/* Bottom Bar */}
+        <div className="mt-16 pt-8 border-t border-white/8 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p className="text-white/30 text-xs font-light">
+            © {new Date().getFullYear()} Saqib Restaurant · Matta, Swat. All rights reserved.
           </p>
-          <div className="flex gap-6 text-xs text-muted">
-            <span className="hover:text-brand cursor-pointer transition-colors">Privacy Policy</span>
-            <span className="hover:text-brand cursor-pointer transition-colors">Terms of Service</span>
-            <span className="hover:text-brand cursor-pointer transition-colors">Halal Certified</span>
+          <div className="flex gap-6 text-[11px] text-white/25">
+            {["Halal Certified", "Privacy Policy", "Terms of Service"].map((item) => (
+              <span key={item} className="hover:text-gold cursor-pointer transition-colors duration-300">
+                {item}
+              </span>
+            ))}
           </div>
         </div>
       </div>

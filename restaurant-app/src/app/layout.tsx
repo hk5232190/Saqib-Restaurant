@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className="antialiased min-h-screen flex flex-col">
         <CartProvider>
           <Navbar />
-          <main className="flex-grow pt-16">
+          <main className="flex-grow">
             <PageTransition>
               {children}
             </PageTransition>

@@ -3,92 +3,90 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-interface AmbianceItem {
-  id: number;
-  title: string;
-  subtitle: string;
-  image: string;
-}
-
-const AMBIANCE_ITEMS: AmbianceItem[] = [
+const AMBIANCE_ITEMS = [
   {
     id: 1,
-    title: "The Obsidian Lounge",
-    subtitle: "Sophisticated mood lighting, plush leather seating, and curated jazz. Perfect for pre-dinner aperitifs.",
+    label: "Signature Vibe",
+    title: "The Dining Hall",
+    subtitle: "Sophisticated mood lighting, plush seating, and a warm Pashtun welcome in every corner.",
     image: "https://images.unsplash.com/photo-1543007630-9710e4a00a20?q=80&w=1000&auto=format&fit=crop",
   },
   {
     id: 2,
+    label: "Exclusive Space",
     title: "The Chef's Table",
-    subtitle: "Front-row seats to culinary theater. Interact directly with the chefs preparing your tasting menu.",
+    subtitle: "Front-row seats to culinary theater. Interact with the chefs preparing your tasting menu.",
     image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1000&auto=format&fit=crop",
   },
   {
     id: 3,
+    label: "Grand Setting",
     title: "Main Dining Room",
-    subtitle: "A soaring ceiling layout accented with gold brass and natural stone, reflecting elite grandeur.",
+    subtitle: "A soaring layout accented with natural wood and stone — reflecting the grandeur of Swat.",
     image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop",
   },
   {
     id: 4,
+    label: "Exclusive Space",
     title: "VIP Mezzanine",
-    subtitle: "Overlooking the main dining hall, offering complete privacy and dedicated sommelier service.",
+    subtitle: "Overlooking the main dining hall, offering complete privacy and personal service.",
     image: "https://images.unsplash.com/photo-1560624052-449f5ddf0c31?q=80&w=1000&auto=format&fit=crop",
   },
   {
     id: 5,
-    title: "The Patio Bar",
-    subtitle: "An open-air garden terrace setting featuring fire pits and custom botanical mocktails.",
+    label: "Open Air",
+    title: "The Garden Terrace",
+    subtitle: "An open-air terrace under the Swat sky — the perfect setting for family gatherings.",
     image: "https://images.unsplash.com/photo-1578474846511-04ba529f0b88?q=80&w=1000&auto=format&fit=crop",
   },
   {
     id: 6,
-    title: "The Wine Cellar",
-    subtitle: "A climate-controlled vault containing rare vintages and premium reserved selections.",
+    label: "Tradition",
+    title: "The Traditional Corner",
+    subtitle: "Inspired by Swati architecture — raw wood, clay walls, and the aroma of freshly brewed Qehwa.",
     image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=1000&auto=format&fit=crop",
   },
 ];
 
 export default function AmbianceGallery() {
   return (
-    <section className="py-32 bg-background border-t border-border/40">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+    <section className="py-32 bg-[#F7F7F7]">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <span className="text-brand text-xs uppercase tracking-[0.25em] font-semibold block mb-3">
-            Explore the Physical Vibe
-          </span>
+          <span className="eyebrow block mb-4">Explore the Physical Vibe</span>
           <h2
-            className="text-4xl md:text-6xl font-bold text-foreground uppercase tracking-wider mb-4"
-            style={{ fontFamily: "'Playfair Display', serif" }}
+            className="text-[clamp(2.2rem,5vw,4rem)] font-bold text-foreground mb-5"
+            style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            The Ambiance <span className="text-brand italic font-normal">Gallery</span>
+            The Ambiance{" "}
+            <em className="italic font-light text-brand">Gallery</em>
           </h2>
-          <p className="text-muted max-w-lg mx-auto font-light mt-4">
+          <p className="text-muted max-w-md mx-auto text-sm font-light mb-6">
             A visual journey through the curated spaces of Saqib Restaurant.
           </p>
-          <div className="h-0.5 w-24 bg-brand mx-auto mt-6" />
+          <span className="gold-divider" />
         </motion.div>
 
-        {/* Masonry Grid Layout */}
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+        {/* Masonry Grid */}
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-5 space-y-5">
           {AMBIANCE_ITEMS.map((item, idx) => (
             <motion.div
               key={item.id}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.6, delay: idx * 0.1 }}
-              className="break-inside-avoid relative rounded-2xl overflow-hidden border border-border/60 bg-surface group cursor-pointer"
+              transition={{ duration: 0.6, delay: idx * 0.09 }}
+              className="break-inside-avoid relative rounded-md overflow-hidden shadow-luxury group cursor-pointer"
             >
-              {/* Dynamic Image */}
+              {/* Image */}
               <img
                 src={item.image}
                 alt={item.title}
@@ -96,34 +94,25 @@ export default function AmbianceGallery() {
                 loading="lazy"
               />
 
-              {/* Backdrop Blur Hover Overlay */}
-              <motion.div 
-                initial={{ opacity: 0 }}
-                whileHover={{ opacity: 1 }}
-                transition={{ duration: 0.4 }}
-                className="absolute inset-0 bg-background/60 backdrop-blur-md flex flex-col justify-end p-8 z-25 opacity-0 transition-opacity duration-300"
-              >
-                <motion.div
-                  initial={{ y: 20, opacity: 0 }}
-                  whileHover={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.4, delay: 0.05 }}
-                  className="space-y-2"
+              {/* Always-visible bottom gradient */}
+              <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/70 to-transparent z-10" />
+
+              {/* Bottom label (always visible) */}
+              <div className="absolute bottom-0 left-0 right-0 z-20 p-5 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                <span className="text-gold text-[9px] uppercase tracking-[0.22em] font-semibold">{item.label}</span>
+                <h3
+                  className="text-white text-lg font-bold mt-0.5"
+                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 >
-                  <span className="text-brand text-xs uppercase tracking-widest font-semibold">
-                    {item.id % 2 === 0 ? "Exclusive Space" : "Signature Vibe"}
-                  </span>
-                  <h3 className="text-2xl font-bold text-foreground font-serif">
-                    {item.title}
-                  </h3>
-                  <p className="text-stone-600 text-sm font-light leading-relaxed">
-                    {item.subtitle}
-                  </p>
-                </motion.div>
-              </motion.div>
+                  {item.title}
+                </h3>
+                <p className="text-white/60 text-xs font-light mt-1 max-h-0 group-hover:max-h-12 overflow-hidden transition-all duration-500 leading-relaxed">
+                  {item.subtitle}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>
-
       </div>
     </section>
   );

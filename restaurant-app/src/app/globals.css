@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,12 +6,17 @@
 
 @layer base {
   :root {
-    --background: #FAF9F6;
+    --background: #FFFFFF;
     --surface:    #FFFFFF;
-    --border:     #E8E4DC;
-    --primary:    #C5A880;
-    --foreground: #2C1E11;
-    --muted:      #8A7968;
+    --surface-2:  #F7F7F7;
+    --border:     #E5E5E5;
+    --primary:    #D4AF37;
+    --brand:      #0F5132;
+    --brand-dark: #0A3D26;
+    --foreground: #222222;
+    --muted:      #555555;
+    --gold:       #D4AF37;
+    --gold-light: #F0D875;
   }
 }
 
@@ -24,24 +29,95 @@ body {
   background: var(--background);
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.7;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
   color: var(--foreground);
+  line-height: 1.15;
+  letter-spacing: 0.01em;
 }
 
-/* Elegant Light-Theme Custom Scrollbar */
+/* Luxury Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #FAF9F6;
+  background: #F5F5F5;
 }
 ::-webkit-scrollbar-thumb {
-  background: #D9D4CB;
+  background: #D4AF37;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #C5A880;
+  background: #0F5132;
+}
+
+/* Gold divider utility */
+.gold-divider {
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, #D4AF37, #F0D875, #D4AF37);
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+/* Section heading eyebrow */
+.eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+/* Luxury Button */
+.btn-luxury {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2.25rem;
+  background: var(--brand);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+.btn-luxury:hover {
+  background: var(--brand-dark);
+  box-shadow: 0 8px 30px rgba(15, 81, 50, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-outline-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2.25rem;
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1.5px solid var(--gold);
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+.btn-outline-gold:hover {
+  background: var(--gold);
+  color: #111111;
+  transform: translateY(-1px);
 }
