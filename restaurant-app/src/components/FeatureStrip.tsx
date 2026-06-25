@@ -30,7 +30,7 @@ export default function FeatureStrip() {
   return (
     <section className="bg-brand py-12 border-y border-brand-dark">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-0 divide-x divide-white/10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-0 divide-x divide-white/10">
           {FEATURES.map((feat, i) => {
             const Icon = feat.icon;
             return (

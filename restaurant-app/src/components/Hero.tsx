@@ -90,14 +90,14 @@ export default function Hero() {
             </motion.div>
           </Link>
 
-          <Link href="/book">
+          <Link href="/contact">
             <motion.div
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               className="flex items-center gap-2.5 px-8 py-4 bg-transparent border border-white/60 text-white text-[11px] font-bold uppercase tracking-[0.18em] rounded-sm cursor-pointer transition-all duration-300 hover:border-white hover:bg-white/5"
             >
               <Calendar size={14} />
-              Reserve a Table
+              Contact Us
             </motion.div>
           </Link>
         </motion.div>

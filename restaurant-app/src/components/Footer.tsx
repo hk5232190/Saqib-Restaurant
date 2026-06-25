@@ -81,7 +81,7 @@ export default function Footer() {
                 { label: "Our Menu", href: "/menu" },
                 { label: "About Us", href: "/about" },
                 { label: "Gallery", href: "/gallery" },
-                { label: "Reserve a Table", href: "/book" },
+                { label: "Contact Us", href: "/contact" },
               ].map(({ label, href }) => (
                 <li key={label}>
                   <Link

@@ -25,9 +25,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Breakfast",
     "description": "Authentic Chana Puri prepared with fresh ingredients.",
     "image": "/assets/images/Breakfast/Chana Puri.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 2,
@@ -36,9 +34,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Breakfast",
     "description": "Authentic Aloo Paratha prepared with fresh ingredients.",
     "image": "/assets/images/Breakfast/Aloo Paratha.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 3,
@@ -47,9 +43,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Breakfast",
     "description": "Authentic Plain Paratha prepared with fresh ingredients.",
     "image": "/assets/images/Breakfast/Plain Paratha.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 4,
@@ -58,9 +52,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Breakfast",
     "description": "Authentic Desi Ghee Paratha prepared with fresh ingredients.",
     "image": "/assets/images/Breakfast/Desi Ghee Paratha.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 5,
@@ -69,9 +61,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Breakfast",
     "description": "Authentic Anda Paratha prepared with fresh ingredients.",
     "image": "/assets/images/Breakfast/Anda Paratha.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 6,
@@ -80,9 +70,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Breakfast",
     "description": "Authentic Omelette prepared with fresh ingredients.",
     "image": "/assets/images/Breakfast/Omelette.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 7,
@@ -91,9 +79,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Breakfast",
     "description": "Authentic Fried Egg prepared with fresh ingredients.",
     "image": "/assets/images/Breakfast/Fried Egg.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 8,
@@ -102,9 +88,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Breakfast",
     "description": "Authentic Doodh Patti Chai prepared with fresh ingredients.",
     "image": "/assets/images/Breakfast/Doodh Patti Chai.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 9,
@@ -113,9 +97,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Breakfast",
     "description": "Authentic Fresh Butter & Honey prepared with fresh ingredients.",
     "image": "/assets/images/Breakfast/Fresh Butter & Honey.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 10,
@@ -124,9 +106,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Breakfast",
     "description": "Authentic Yogurt prepared with fresh ingredients.",
     "image": "/assets/images/Breakfast/Yogurt.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 11,
@@ -135,9 +115,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Breakfast",
     "description": "Authentic Kabuli Chana prepared with fresh ingredients.",
     "image": "/assets/images/Breakfast/Kabuli Chana.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 12,
@@ -146,9 +124,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Muttons",
     "description": "Authentic Mutton Karahi prepared with fresh ingredients.",
     "image": "/assets/images/Mutton/Mutton Karahi.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 13,
@@ -157,9 +133,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Muttons",
     "description": "Authentic Shinwari Mutton Karahi prepared with fresh ingredients.",
     "image": "/assets/images/Mutton/Shinwari Mutton Karahi.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 14,
@@ -168,9 +142,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Muttons",
     "description": "Authentic White Mutton Karahi prepared with fresh ingredients.",
     "image": "/assets/images/Mutton/White Mutton Karahi.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 15,
@@ -179,9 +151,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Muttons",
     "description": "Authentic Namkeen Gosht prepared with fresh ingredients.",
     "image": "/assets/images/Mutton/Namkeen Gosht.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 16,
@@ -190,9 +160,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Muttons",
     "description": "Authentic Mutton Tikka prepared with fresh ingredients.",
     "image": "/assets/images/Mutton/Mutton Tikka.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 17,
@@ -201,9 +169,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Muttons",
     "description": "Authentic Charsi Mutton Tikka prepared with fresh ingredients.",
     "image": "/assets/images/Mutton/Charsi Mutton Tikka.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 18,
@@ -212,9 +178,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Muttons",
     "description": "Authentic Mutton Seekh Kebab prepared with fresh ingredients.",
     "image": "/assets/images/Mutton/Mutton Seekh Kebab.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 19,
@@ -223,9 +187,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Muttons",
     "description": "Authentic Mutton Peshawari Kebab prepared with fresh ingredients.",
     "image": "/assets/images/Mutton/Mutton Peshawari Kebab.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 20,
@@ -234,9 +196,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Muttons",
     "description": "Authentic Mutton Qorma prepared with fresh ingredients.",
     "image": "/assets/images/Mutton/Mutton Qorma.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 21,
@@ -245,9 +205,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Muttons",
     "description": "Authentic Mutton Handi prepared with fresh ingredients.",
     "image": "/assets/images/Mutton/Mutton Handi.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 22,
@@ -256,9 +214,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Muttons",
     "description": "Authentic Mutton Achari Handi prepared with fresh ingredients.",
     "image": "/assets/images/Mutton/Mutton Achari Handi.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 23,
@@ -267,9 +223,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Muttons",
     "description": "Authentic Mutton Pulao prepared with fresh ingredients.",
     "image": "/assets/images/Mutton/Mutton Pulao.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 24,
@@ -278,9 +232,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Muttons",
     "description": "Authentic Mutton Rosh prepared with fresh ingredients.",
     "image": "/assets/images/Mutton/Mutton Rosh.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 25,
@@ -289,9 +241,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Muttons",
     "description": "Authentic Mutton Kunna prepared with fresh ingredients.",
     "image": "/assets/images/Mutton/Mutton Kunna.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 26,
@@ -300,9 +250,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Muttons",
     "description": "Authentic Mutton Dampukht prepared with fresh ingredients.",
     "image": "/assets/images/Mutton/Mutton Dampukht.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 27,
@@ -311,9 +259,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Muttons",
     "description": "Authentic Chapli Kebab prepared with fresh ingredients.",
     "image": "/assets/images/Mutton/Chapli Kebab.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 28,
@@ -322,9 +268,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chickens",
     "description": "Authentic Chicken Karahi prepared with fresh ingredients.",
     "image": "/assets/images/Chicken/Chicken Karahi.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 29,
@@ -333,9 +277,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chickens",
     "description": "Authentic Chicken White Karahi prepared with fresh ingredients.",
     "image": "/assets/images/Chicken/Chicken White Karahi.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 30,
@@ -344,9 +286,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chickens",
     "description": "Authentic Chicken Shinwari Karahi prepared with fresh ingredients.",
     "image": "/assets/images/Chicken/Chicken Shinwari Karahi.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 31,
@@ -355,9 +295,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chickens",
     "description": "Authentic Chicken Handi prepared with fresh ingredients.",
     "image": "/assets/images/Chicken/Chicken Handi.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 32,
@@ -366,9 +304,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chickens",
     "description": "Authentic Chicken Achari Handi prepared with fresh ingredients.",
     "image": "/assets/images/Chicken/Chicken Achari Handi.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 33,
@@ -377,9 +313,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chickens",
     "description": "Authentic Chicken Qorma prepared with fresh ingredients.",
     "image": "/assets/images/Chicken/Chicken Qorma.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 34,
@@ -388,9 +322,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chickens",
     "description": "Authentic Chicken Tikka prepared with fresh ingredients.",
     "image": "/assets/images/Chicken/Chicken Tikka.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 35,
@@ -399,9 +331,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chickens",
     "description": "Authentic Chicken Malai Boti prepared with fresh ingredients.",
     "image": "/assets/images/Chicken/Chicken Malai Boti.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 36,
@@ -410,9 +340,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chickens",
     "description": "Authentic Chicken Seekh Kebab prepared with fresh ingredients.",
     "image": "/assets/images/Chicken/Chicken Seekh Kebab.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 37,
@@ -421,9 +349,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chickens",
     "description": "Authentic Chicken Reshmi Kebab prepared with fresh ingredients.",
     "image": "/assets/images/Chicken/Chicken Reshmi Kebab.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 38,
@@ -432,9 +358,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chickens",
     "description": "Authentic Chicken Charsi Tikka prepared with fresh ingredients.",
     "image": "/assets/images/Chicken/Chicken Charsi Tikka.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 39,
@@ -443,9 +367,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chickens",
     "description": "Authentic Chicken Roast prepared with fresh ingredients.",
     "image": "/assets/images/Chicken/Chicken Roast.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 40,
@@ -454,9 +376,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chickens",
     "description": "Authentic Chicken Steam Roast prepared with fresh ingredients.",
     "image": "/assets/images/Chicken/Chicken Steam Roast.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 41,
@@ -465,9 +385,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chickens",
     "description": "Authentic Chicken Peshawari Kebab prepared with fresh ingredients.",
     "image": "/assets/images/Chicken/Chicken Peshawari Kebab.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 42,
@@ -476,9 +394,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Fishes",
     "description": "Authentic Swat Trout Fish (Fried) prepared with fresh ingredients.",
     "image": "/assets/images/Fishes/Swat Trout Fish (Fried).jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 43,
@@ -487,9 +403,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Fishes",
     "description": "Authentic Swat Trout Fish (Grilled) prepared with fresh ingredients.",
     "image": "/assets/images/Fishes/Swat Trout Fish (Grilled).jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 44,
@@ -498,9 +412,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Fishes",
     "description": "Authentic Swat Trout Fish (Masala) prepared with fresh ingredients.",
     "image": "/assets/images/Fishes/Swat Trout Fish (Masala).jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 45,
@@ -509,9 +421,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Rices",
     "description": "Authentic Kabuli Pulao prepared with fresh ingredients.",
     "image": "/assets/images/Rice/Kabuli Pulao.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 46,
@@ -520,9 +430,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Rices",
     "description": "Authentic Mutton Pulao prepared with fresh ingredients.",
     "image": "/assets/images/Rice/Mutton Pulao.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 47,
@@ -531,9 +439,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Rices",
     "description": "Authentic Chicken Pulao prepared with fresh ingredients.",
     "image": "/assets/images/Rice/Chicken Pulao.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 48,
@@ -542,9 +448,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Rices",
     "description": "Authentic Yakhni Pulao prepared with fresh ingredients.",
     "image": "/assets/images/Rice/Yakhni Pulao.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 49,
@@ -553,9 +457,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Rices",
     "description": "Authentic Chicken Biryani prepared with fresh ingredients.",
     "image": "/assets/images/Rice/Chicken Biryani.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 50,
@@ -564,9 +466,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Rices",
     "description": "Authentic Beef Biryani prepared with fresh ingredients.",
     "image": "/assets/images/Rice/Beef Biryani.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 51,
@@ -575,9 +475,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Rices",
     "description": "Authentic Plain Rice prepared with fresh ingredients.",
     "image": "/assets/images/Rice/Plain Rice.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 52,
@@ -586,9 +484,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Rices",
     "description": "Authentic Zeera Rice prepared with fresh ingredients.",
     "image": "/assets/images/Rice/Zeera Rice.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 53,
@@ -597,9 +493,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Rices",
     "description": "Authentic Peas Pulao prepared with fresh ingredients.",
     "image": "/assets/images/Rice/Peas Pulao.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 54,
@@ -608,9 +502,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Rices",
     "description": "Authentic Special Swati Pulao prepared with fresh ingredients.",
     "image": "/assets/images/Rice/Special Swati Pulao.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 55,
@@ -619,9 +511,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Vegetables",
     "description": "Authentic Daal Mash prepared with fresh ingredients.",
     "image": "/assets/images/Vegetables/Daal Mash.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 56,
@@ -630,9 +520,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Vegetables",
     "description": "Authentic Daal Chana prepared with fresh ingredients.",
     "image": "/assets/images/Vegetables/Daal Chana.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 57,
@@ -641,9 +529,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Vegetables",
     "description": "Authentic Daal Fry prepared with fresh ingredients.",
     "image": "/assets/images/Vegetables/Daal Fry.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 58,
@@ -652,9 +538,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Vegetables",
     "description": "Authentic Mix Vegetable prepared with fresh ingredients.",
     "image": "/assets/images/Vegetables/Mix Vegetable.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 59,
@@ -663,9 +547,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Vegetables",
     "description": "Authentic Aloo Palak prepared with fresh ingredients.",
     "image": "/assets/images/Vegetables/Aloo Palak.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 60,
@@ -674,9 +556,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Vegetables",
     "description": "Authentic Palak Paneer prepared with fresh ingredients.",
     "image": "/assets/images/Vegetables/Palak Paneer.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 61,
@@ -685,9 +565,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Vegetables",
     "description": "Authentic Bhindi Masala prepared with fresh ingredients.",
     "image": "/assets/images/Vegetables/Bhindi Masala.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 62,
@@ -696,9 +574,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Vegetables",
     "description": "Authentic Baingan Bharta prepared with fresh ingredients.",
     "image": "/assets/images/Vegetables/Baingan Bharta.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 63,
@@ -707,9 +583,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Vegetables",
     "description": "Authentic Aloo Gobhi prepared with fresh ingredients.",
     "image": "/assets/images/Vegetables/Aloo Gobhi.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 64,
@@ -718,9 +592,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Vegetables",
     "description": "Authentic Chana Masala prepared with fresh ingredients.",
     "image": "/assets/images/Vegetables/Chana Masala.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 65,
@@ -729,9 +601,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Vegetables",
     "description": "Authentic Rajma prepared with fresh ingredients.",
     "image": "/assets/images/Vegetables/Rajma.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 66,
@@ -740,9 +610,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Vegetables",
     "description": "Authentic Seasonal Vegetable Curry prepared with fresh ingredients.",
     "image": "/assets/images/Vegetables/Seasonal Vegetable Curry.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 67,
@@ -751,9 +619,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Drinks",
     "description": "Authentic Mineral Water prepared with fresh ingredients.",
     "image": "/assets/images/Drinks/Mineral Water.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 68,
@@ -762,9 +628,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Drinks",
     "description": "Authentic Coca-Cola prepared with fresh ingredients.",
     "image": "/assets/images/Drinks/Coca-Cola.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 70,
@@ -773,9 +637,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Drinks",
     "description": "Authentic Pepsi prepared with fresh ingredients.",
     "image": "/assets/images/Drinks/Pepsi.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 72,
@@ -784,9 +646,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Drinks",
     "description": "Authentic 7UP prepared with fresh ingredients.",
     "image": "/assets/images/Drinks/7UP.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 73,
@@ -795,9 +655,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Drinks",
     "description": "Authentic Sprite prepared with fresh ingredients.",
     "image": "/assets/images/Drinks/Sprite.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 74,
@@ -806,9 +664,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Drinks",
     "description": "Authentic Mountain Dew prepared with fresh ingredients.",
     "image": "/assets/images/Drinks/Mountain Dew.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 84,
@@ -817,9 +673,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chai",
     "description": "Authentic Doodh Patti prepared with fresh ingredients.",
     "image": "/assets/images/Chai/Doodh Patti.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 85,
@@ -828,9 +682,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chai",
     "description": "Authentic Karak Chai prepared with fresh ingredients.",
     "image": "/assets/images/Chai/Karak Chai.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 86,
@@ -839,9 +691,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chai",
     "description": "Authentic Elaichi Chai prepared with fresh ingredients.",
     "image": "/assets/images/Chai/Elaichi Chai.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 87,
@@ -850,9 +700,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chai",
     "description": "Authentic Kashmiri Chai prepared with fresh ingredients.",
     "image": "/assets/images/Chai/Kashmiri Chai.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 88,
@@ -861,9 +709,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chai",
     "description": "Authentic Special Swati Chai prepared with fresh ingredients.",
     "image": "/assets/images/Chai/Special Swati Chai.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 89,
@@ -872,9 +718,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chai",
     "description": "Authentic Honey Chai prepared with fresh ingredients.",
     "image": "/assets/images/Chai/Honey Chai.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 90,
@@ -883,9 +727,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chai",
     "description": "Authentic Green Tea prepared with fresh ingredients.",
     "image": "/assets/images/Chai/Green Tea.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 91,
@@ -894,9 +736,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chai",
     "description": "Authentic Peshawari Qehwa prepared with fresh ingredients.",
     "image": "/assets/images/Chai/Peshawari Qehwa.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 94,
@@ -905,9 +745,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chai",
     "description": "Authentic Honey Green Tea prepared with fresh ingredients.",
     "image": "/assets/images/Chai/Honey Green Tea.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 95,
@@ -916,9 +754,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chai",
     "description": "Authentic Lemon Green Tea prepared with fresh ingredients.",
     "image": "/assets/images/Chai/Lemon Green Tea.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 97,
@@ -927,9 +763,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chai",
     "description": "Authentic Black Coffee prepared with fresh ingredients.",
     "image": "/assets/images/Chai/Black Coffee.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 98,
@@ -938,9 +772,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chai",
     "description": "Authentic Milk Coffee prepared with fresh ingredients.",
     "image": "/assets/images/Chai/Milk Coffee.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 99,
@@ -949,9 +781,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chai",
     "description": "Authentic Cappuccino prepared with fresh ingredients.",
     "image": "/assets/images/Chai/Cappuccino.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 103,
@@ -960,9 +790,7 @@ const MOCK_MENU: MenuItem[] = [
     "category": "Chai",
     "description": "Authentic Special House Coffee prepared with fresh ingredients.",
     "image": "/assets/images/Chai/Special House Coffee.jfif",
-    "dietary": [
-      "Halal"
-    ]
+    "dietary": []
   },
   {
     "id": 104,
@@ -972,8 +800,7 @@ const MOCK_MENU: MenuItem[] = [
     "description": "Authentic Chapli Kebab Platter prepared with fresh ingredients.",
     "image": "/assets/images/Platters/Chapli Kebab Platter.jfif",
     "dietary": [
-      "Halal",
-      "Sharing"
+            "Sharing"
     ]
   },
   {
@@ -984,8 +811,7 @@ const MOCK_MENU: MenuItem[] = [
     "description": "Authentic Kabuli Pulao Platter prepared with fresh ingredients.",
     "image": "/assets/images/Platters/Kabuli Pulao Platter.jfif",
     "dietary": [
-      "Halal",
-      "Sharing"
+            "Sharing"
     ]
   },
   {
@@ -996,8 +822,7 @@ const MOCK_MENU: MenuItem[] = [
     "description": "Authentic Mixed BBQ Platter prepared with fresh ingredients.",
     "image": "/assets/images/Platters/Mixed BBQ Platter.jfif",
     "dietary": [
-      "Halal",
-      "Sharing"
+            "Sharing"
     ]
   },
   {
@@ -1008,8 +833,7 @@ const MOCK_MENU: MenuItem[] = [
     "description": "Authentic Family BBQ Platter prepared with fresh ingredients.",
     "image": "/assets/images/Platters/Family BBQ Platter.jfif",
     "dietary": [
-      "Halal",
-      "Sharing"
+            "Sharing"
     ]
   },
   {
@@ -1020,8 +844,7 @@ const MOCK_MENU: MenuItem[] = [
     "description": "Authentic Swat Trout Fish Platter prepared with fresh ingredients.",
     "image": "/assets/images/Platters/Swat Trout Fish Platter.jfif",
     "dietary": [
-      "Halal",
-      "Sharing"
+            "Sharing"
     ]
   },
   {
@@ -1032,8 +855,7 @@ const MOCK_MENU: MenuItem[] = [
     "description": "Authentic Swati Special Platter prepared with fresh ingredients.",
     "image": "/assets/images/Platters/Swati Special Platter.jfif",
     "dietary": [
-      "Halal",
-      "Sharing"
+            "Sharing"
     ]
   },
   {
@@ -1044,8 +866,7 @@ const MOCK_MENU: MenuItem[] = [
     "description": "Authentic Malai prepared with fresh ingredients.",
     "image": "/assets/images/Breakfast/Malai.jfif",
     "dietary": [
-      "Halal",
-      "Fresh"
+            "Fresh"
     ]
   }
 ];

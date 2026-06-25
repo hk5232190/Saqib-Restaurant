@@ -13,6 +13,7 @@ const NAV_LINKS = [
   { label: "Menu", href: "/menu" },
   { label: "About", href: "/about" },
   { label: "Gallery", href: "/gallery" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -130,14 +131,14 @@ export default function Navbar() {
                 </AnimatePresence>
               </button>
 
-              {/* Reserve Table CTA */}
-              <Link href="/book">
+              {/* Contact Us CTA */}
+              <Link href="/contact">
                 <motion.div
                   whileHover={{ scale: 1.03, boxShadow: "0 6px 24px rgba(15,81,50,0.35)" }}
                   whileTap={{ scale: 0.97 }}
                   className="px-5 py-2.5 bg-brand text-white text-[11px] font-bold uppercase tracking-[0.15em] rounded-sm cursor-pointer transition-colors duration-300 hover:bg-brand-dark"
                 >
-                  Reserve a Table
+                  Contact Us
                 </motion.div>
               </Link>
             </div>
@@ -207,9 +208,9 @@ export default function Navbar() {
                   );
                 })}
                 <div className="pt-4 border-t border-[#E5E5E5] mt-4">
-                  <Link href="/book" onClick={() => setIsOpen(false)}>
+                  <Link href="/contact" onClick={() => setIsOpen(false)}>
                     <div className="w-full py-3.5 bg-brand text-white text-[11px] font-bold uppercase tracking-[0.18em] rounded-sm text-center">
-                      Reserve a Table
+                      Contact Us
                     </div>
                   </Link>
                 </div>
